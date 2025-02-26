@@ -4,7 +4,7 @@ dependencies: []
 name: Clone of Live Chat
 package_name: LiveChat
 renamed: true
-runtime_options: {client_version: '2', server_spec: null, server_version: python2-sandbox, version: 1}
+runtime_options: {client_version: '2', server_spec: null, server_version: python2-sandbox, version: 2}
 services:
 - client_config: {allow_remember_me: true, allow_signup: true, confirm_email: true, enable_automatically: true, remember_me_days: 30, require_secure_passwords: true, use_email: true}
   server_config: {user_table: 16198}
