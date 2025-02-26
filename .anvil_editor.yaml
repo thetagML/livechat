@@ -1,0 +1,11 @@
+unique_ids:
+  assets:
+    standard-page.html: J6CSNJ6JYZ6GDDDMD46U54ZZTSMJDB4C
+    theme.css: 6JJKFMBFPKXK2JZRGFOOTGGSRPOSEK53
+  forms:
+    Form1: QIB6CYRITV267L3GVBZNL2UMG4GMPPEM
+    RowTemplate1: EM7XPAOJHPU4QMXKLS2HGAIB7LQH2UQC
+  modules: {}
+  scripts: {}
+  server_modules:
+    DatabaseProxy: PFW2LVZCIRTLQZV2ZPDHOFOH2D6V3C6W

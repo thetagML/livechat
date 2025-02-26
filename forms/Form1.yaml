@@ -1,0 +1,133 @@
+components:
+- components:
+  - components:
+    - components:
+      - layout_properties: {}
+        name: label_channel
+        properties: {align: left, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: input-prompt, spacing_above: small, spacing_below: small, text: 'Channel:', tooltip: '', underline: false, visible: true}
+        type: Label
+      - event_bindings: {change: drop_down_channel_change}
+        layout_properties: {}
+        name: drop_down_channel
+        properties: {}
+        type: DropDown
+      layout_properties: {grid_position: 'WFXQLZ,HBQFDJ'}
+      name: flow_panel_1
+      properties: {}
+      type: FlowPanel
+    layout_properties: {grid_position: 'RDPMNV,RXLMKO'}
+    name: card_2
+    properties: {col_widths: '{}', role: card}
+    type: ColumnPanel
+  - components:
+    - components:
+      - components:
+        - event_bindings: {pressed_enter: text_box_message_pressed_enter}
+          layout_properties: {grid_position: 'EDSEIE,MRCXKU'}
+          name: text_box_message
+          properties: {align: left, background: '', bold: false, border: '', enabled: true, font: '', font_size: null, foreground: '', hide_text: false, italic: false, placeholder: Message ..., role: null, spacing_above: small, spacing_below: small, text: '', tooltip: '', type: text, underline: false, visible: true}
+          type: TextBox
+        - event_bindings: {click: button_send_click}
+          layout_properties: {grid_position: 'EDSEIE,UUDRQJ'}
+          name: button_send
+          properties:
+            align: center
+            background: ''
+            bold: false
+            border: ''
+            enabled: true
+            font: ''
+            font_size: null
+            foreground: ''
+            icon: ''
+            icon_align: left
+            italic: false
+            role: primary-color
+            spacing_above: small
+            spacing_below: small
+            text: |
+              Send
+            tooltip: ''
+            underline: false
+            visible: true
+          type: Button
+        layout_properties: {grid_position: 'QFAPNU,WKIJKW'}
+        name: column_panel_1
+        properties: {col_widths: '{"UUDRQJ":7,"MRCXKU":35}'}
+        type: ColumnPanel
+      - layout_properties: {}
+        name: repeating_panel_1
+        properties: {item_template: RowTemplate1, spacing_above: none, spacing_below: none}
+        type: RepeatingPanel
+      layout_properties: {grid_position: 'XESZSL,RDPCOA'}
+      name: data_grid_1
+      properties:
+        auto_header: true
+        background: ''
+        border: ''
+        columns:
+        - {data_key: when, expand: false, id: VMDJNN, title: Time, width: 90}
+        - {data_key: '', expand: false, id: RXSOVW, title: From, width: 241}
+        - {data_key: message, id: GOOQII, title: Message}
+        foreground: ''
+        role: null
+        rows_per_page: 20
+        show_page_controls: true
+        spacing_above: small
+        spacing_below: small
+        tooltip: ''
+        visible: true
+      type: DataGrid
+    layout_properties: {grid_position: 'ABUBAU,PXMBFM'}
+    name: card_1
+    properties: {col_widths: '{}', role: card}
+    type: ColumnPanel
+  - data_bindings:
+    - {code: '''Signed in as {}''.format(self.current_user_email())', property: text}
+    layout_properties: {grid_position: 'IKXIMU,ZFPIYQ'}
+    name: label_signed_in_as
+    properties: {align: right, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: subheading, spacing_above: small, spacing_below: small, text: '', tooltip: '', underline: false, visible: true}
+    type: Label
+  layout_properties: {slot: default}
+  name: content_panel
+  properties: {col_widths: '{}'}
+  type: ColumnPanel
+- components:
+  - event_bindings: {click: link_log_out_click}
+    layout_properties: {}
+    name: link_log_out
+    properties: {align: left, background: '', bold: false, border: '', col_spacing: medium, col_widths: '', font: '', font_size: null, foreground: '', icon: 'fa:eject', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Log out, tooltip: '', underline: false, visible: true, wrap_on: mobile}
+    type: Link
+  layout_properties: {slot: nav-right}
+  name: navbar_links
+  properties: {}
+  type: FlowPanel
+- layout_properties: {slot: title}
+  name: label_1
+  properties:
+    align: left
+    background: ''
+    bold: false
+    border: ''
+    font: ''
+    font_size: null
+    foreground: ''
+    icon: ''
+    icon_align: left
+    italic: false
+    role: null
+    spacing_above: small
+    spacing_below: small
+    text: |
+      Live Chat
+    tooltip: ''
+    underline: false
+    visible: true
+  type: Label
+- event_bindings: {tick: timer_1_tick}
+  name: timer_1
+  properties: {}
+  type: Timer
+container:
+  properties: {html: '@theme:standard-page.html'}
+  type: HtmlTemplate

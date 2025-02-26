@@ -1,0 +1,16 @@
+components:
+- data_bindings:
+  - {code: 'self.item[''from_user''][''email'']', property: text}
+  layout_properties: {column: RXSOVW}
+  name: label_name
+  properties: {}
+  type: Label
+- data_bindings:
+  - {code: 'self.item[''when''].strftime(''%H:%M:%S'')', property: text}
+  layout_properties: {column: VMDJNN}
+  name: label_when
+  properties: {}
+  type: Label
+container:
+  data_bindings: []
+  type: DataRowPanel
