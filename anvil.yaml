@@ -1,5 +1,65 @@
 allow_embedding: false
 correct_dependency_ids: {}
+db_schema:
+  channels:
+    client: none
+    columns:
+    - admin_ui: {width: 200}
+      name: name
+      type: string
+    server: full
+    title: channels
+  messages:
+    client: none
+    columns:
+    - admin_ui: {width: 328}
+      name: when
+      type: datetime
+    - admin_ui: {width: 200}
+      name: from_user
+      target: users
+      type: link_single
+    - admin_ui: {width: 200}
+      name: to_channel
+      target: channels
+      type: link_single
+    - admin_ui: {width: 200}
+      name: message
+      type: string
+    server: full
+    title: messages
+  users:
+    client: none
+    columns:
+    - admin_ui: {width: 200}
+      name: email
+      type: string
+    - admin_ui: {width: 100}
+      name: enabled
+      type: bool
+    - admin_ui: {width: 200}
+      name: signed_up
+      type: datetime
+    - admin_ui: {width: 200}
+      name: password_hash
+      type: string
+    - admin_ui: {width: 200}
+      name: confirmed_email
+      type: bool
+    - admin_ui: {width: 200}
+      name: email_confirmation_key
+      type: string
+    - admin_ui: {width: 200}
+      name: last_login
+      type: datetime
+    - admin_ui: {width: 200}
+      name: remembered_logins
+      type: simpleObject
+    - admin_ui: {width: 200}
+      name: n_password_failures
+      type: number
+    server: full
+    title: users
 dependencies: []
 name: Clone of Live Chat
 package_name: LiveChat
