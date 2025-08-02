@@ -1,3 +1,4 @@
+import anvil.secrets
 import anvil.tables as tables
 from anvil.tables import app_tables
 import anvil.users
