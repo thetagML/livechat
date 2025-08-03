@@ -2,7 +2,7 @@ allow_embedding: false
 correct_dependency_ids: {}
 db_schema:
   channels:
-    client: none
+    client: full
     columns:
     - admin_ui: {width: 200}
       name: name
@@ -10,7 +10,7 @@ db_schema:
     server: full
     title: channels
   messages:
-    client: none
+    client: full
     columns:
     - admin_ui: {width: 328}
       name: when
@@ -29,7 +29,7 @@ db_schema:
     server: full
     title: messages
   users:
-    client: none
+    client: full
     columns:
     - admin_ui: {width: 200}
       name: email
@@ -66,7 +66,7 @@ package_name: LiveChat
 renamed: true
 runtime_options:
   client_version: '2'
-  server_spec: {base: python310-minimal}
+  server_spec: {base: python310-standard}
   server_version: python3-sandbox
   version: 2
 services:
