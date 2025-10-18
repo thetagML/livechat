@@ -9,7 +9,7 @@ components:
   - {code: 'self.item[''when''].strftime(''%H:%M:%S'')', property: text}
   layout_properties: {column: VMDJNN}
   name: label_when
-  properties: {}
+  properties: {foreground: 'theme:Primary 700'}
   type: Label
 container:
   data_bindings: []
