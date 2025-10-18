@@ -60,7 +60,10 @@ db_schema:
       type: number
     server: full
     title: users
-dependencies: []
+dependencies:
+- dep_id: dep_mg9kos5aifbxo
+  resolution_hints: {app_id: C6ZZPAPN4YYF5NVJ, name: Anvil Extras, package_name: anvil_extras}
+  version: {version_tag: v3.5.0}
 name: Clone of Live Chat
 package_name: LiveChat
 renamed: true
