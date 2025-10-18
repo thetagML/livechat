@@ -1,7 +1,7 @@
+import anvil.users
 import anvil.secrets
 import anvil.tables as tables
 from anvil.tables import app_tables
-import anvil.users
 import anvil.server
 from datetime import datetime
 from anvil_extras.messaging import Publisher

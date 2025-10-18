@@ -125,8 +125,9 @@ components:
     visible: true
   type: Label
 - event_bindings: {tick: timer_1_tick}
+  layout_properties: {}
   name: timer_1
-  properties: {}
+  properties: {interval: 3}
   type: Timer
 container:
   properties: {html: '@theme:standard-page.html'}
